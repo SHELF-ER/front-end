@@ -90,12 +90,23 @@ header {
 
 table {
     font-size: 15px;
-    border: 1px solid black;
+    border: 3px outset #aaaaaa;
+    background-color: #CCCCCC;
+    border-spacing: 5px;
 }
-table th,td {
+
+table th {
     background-color: white;
     border: 1px solid black;
 }
+
+table td {
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    width: 40px;
+    height: 100px;
+}
+
 table .errorBook {
     background-color: red;
 }
