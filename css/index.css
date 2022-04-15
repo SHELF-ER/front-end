@@ -15,7 +15,7 @@ body {
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
-    background-color: #4C7DBD;
+    background-color: #7196DB;
 }
 
 ul {
@@ -37,7 +37,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .clear { clear: both; }
-.bdright { border-right: 1px solid #aaaaaa; }
+.bdright { border-right: 1px solid #AAA; }
 
 header {
     width: 100%;
@@ -63,11 +63,11 @@ header {
     height: 80px;
     display: inline-block;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: bolder;
     line-height: 80px;
     text-align: center;
     background-color: #F9F9F9;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 0 15px;
     cursor: pointer;
 }
@@ -76,13 +76,16 @@ header {
     height: 100%;
 }
 #main li:hover {
-    background-color: #FFD358;
+    background-color: #D8CCAD;
+}
+#main .selected a {
+    color: white;
 }
 #main .selected {
-    background-color: #CCCCCC;
+    background-color: #5E5E5E;
 }
 #main .selected:hover {
-    background-color: #FFC831;
+    background-color: #797058;
 }
 
 table {
