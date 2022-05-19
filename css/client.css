@@ -78,10 +78,14 @@ header {
 
 #util {
     float: right;
+    padding: 17px 0;
 }
 
 #util li {
     float: left;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: bold;
     vertical-align: middle;
 }
 
