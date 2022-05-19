@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+html {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#subtitle {
+    float: left;
+    display: block;
+    border: 1px solid rgb(164, 196, 255);
+    background-color: rgb(164, 196, 255);
+    padding: 50px 70px;
+    margin: 10px;
+}
+
+#wrap {
+    width: 960px;
+    height: 200px;
+}
+
+#sectionpage_nav {
+    display: block;
+    border: 1px solid black;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+
+#util {
+    margin: 0 auto;
+    float: right;
+    top: 30px;
+}
+
+#left {
+    width: 200px;
+    float: left;
+    display: block;
+    border: 1px solid black;
+    padding: 20px 10px;
+    line-height: 31px;
+
+}
+
+.menu_02 ul {
+    background-color: azure;
+}
+
+.menu_03 ul {
+    background-color: azure;
+}
+
+#content {
+    width: 700px;
+    float: right;
+    display: block;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+#buttonday{
+    display: block;
+    border: 1px solid black;
+    padding: 10px 10px;
+    float: right;
+
+}
+#mop02{
+    float: left;
+    margin-top: 20px;
+}
+
+#mop02>a{
+    color: tomato;
+}
+
+#buttonday>a{
+    color: tomato;
+}
+
+#bookprofile02 {
+    width: 700px;
+    float: right;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 15px 10px;
+    background-color: lightgray;
+    line-height: 30px;
+}
+  
+#bookimg{
+    float: left;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+#bookinfo{
+    width: 500px;
+    padding: 0;
+    display: block; 
+    border: 1px solid grey;
+    float: right;
+    padding: 3px 3px;
+}
