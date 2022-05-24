@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/client.css">
+	<link rel="stylesheet" href="./css/client.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Web site created using create-react-app" />
@@ -17,101 +17,75 @@
 		</div>
 		<div id="topnav">
 			<ul>
-				<li><img src="img/home.png" alt="home"></li>
+				<li><img src="./img/homeicon.png" alt="home icon"/></li>
 				<li>&#10217;</li>
-				<li><a href="client.html">나의 도서관</a></li>
+				<li><a href="./client.html">나의 도서관</a></li>
 				<li>&#10217;</li>
-				<li><a href="client.html">내 정보</a></li>
+				<li><a href="./client.html">내 정보</a></li>
 			</ul>
 		</div>
-		<div id="util">
+		<div id="loginnav">
 			<ul>
 				<li>○○○님,</li>
-				<li><a href="main.html">로그아웃</a></li>
+				<li><a href="./main.html">로그아웃</a></li>
 			</ul>
-			<a href="client.html"><img src="img/member.png"></a>
+			<a href="./client.html"><img src="./img/loginicon.png" alt="login icon"/></a>
 		</div>
 	</header>
-
-	<div id="section">
-		<!--본문 내용-->
+	
+	<!-- 본문 내용 -->
+	<section>
+		<!-- left 시작 -->
 		<div id="left">
-			<!--nav 목록-->
-			<div class="menu">
+			<div id="menu_01" class="menu">
+				<div class="menu_title"><a href="#">자료검색</a></div>
+			</div>
+			<div id="menu_02" class="menu">
+				<div class="menu_title"><a href="#">인기신간</a></div>
 				<ul>
-					<div class="menu_01">
-						<a href="#"><strong>자료검색</strong></a>
-					</div>
-					<div class="menu_02">
-						<a href="#"><strong>인기신간</strong></a>
-						<ul>
-							<li>
-								<a href="#">가정과 생활</a>
-							</li>
-							<li>
-								<a href="#">경제/비즈니스</a>
-							</li>
-							<li>
-								<a href="#">인문/사회</a>
-							</li>
-							<li>
-								<a href="#">역사</a>
-							</li>
-							<li>
-								<a href="#">자연/과학</a>
-							</li>
-							<li>
-								<a href="#">취미/건강/여행</a>
-							</li>
-							<li>
-								<a href="#">문화예술</a>
-							</li>
-						</ul>
-					</div>
-					<div class="menu_03">
-						<a href="client.html"><strong>나의 도서관</strong></a>
-						<ul>
-							<li>
-								<a href="client.html">내 정보</a>
-							</li>
-							<li>
-								<a href="myborrow.html">대출 현황</a>
-							</li>
-						</ul>
-					</div>
+					<li><a href="#">&#8226; 가정과 생활</a></li>
+					<li><a href="#">&#8226; 경제/비즈니스</a></li>
+					<li><a href="#">&#8226; 인문/사회</a></li>
+					<li><a href="#">&#8226; 역사</a></li>
+					<li><a href="#">&#8226; 자연/과학</a></li>
+					<li><a href="#">&#8226; 취미/건강/여행</a></li>
+					<li><a href="#">&#8226; 문화예술</a></li>
+				</ul>
+			</div>
+			<div id="menu_03" class="menu">
+				<div class="menu_title"><a href="./client.html">나의 도서관</a></div>
+				<ul>
+					<li><a href="./client.html">&#8226; 내 정보</a></li>
+					<li><a href="./myborrow.html">&#8226; 대출 현황</a></li>
 				</ul>
 			</div>
 		</div>
+		<!-- left 끝 -->
+		<!-- content 시작 -->
 		<div id="content">
-			<!--right 내용-->
-			<h2><strong>내 정보</strong></h2>
-			<div id="profile01">
-				<ul class="mop">
-					<li>
-					<p>프로필 사진</p>
-					</li>
-					<li>
-					<img src="https://via.placeholder.com/45.png/09f/fff">
-					<!--임시 사진-->
-					<div id="button00">
+			<h1>내 정보</h1><hr>
+			<table id="profile">
+				<tr>
+					<th>프로필 사진</th>
+					<td>
+						<img src="./img/profileicon.png" alt="profile icon"/>
 						<button>사진 변경</button>
-						<button>삭제</button>
-					</div>
-					</li>
-					<li>
-					<p>별명</p>
-					</li>
-					<li>
-					<textarea>내용을 입력해주세요.</textarea>
-					</li>
-				</ul>
-			</div>
+						<button>삭  제</button>
+					</td>
+				</tr>
+				<tr>
+					<th>별명</th>
+					<td><input type="text" placeholder="내용을 입력해주세요"></td>
+				</tr>
+			</table>
 		</div>
-		<div id="profile02">
-			<button>적용</button>
-			<button>취소</button>
+		<!-- content 끝 -->
+		<!-- button -->
+		<div id="button">
+			<button>적  용</button>
+			<button>취  소</button>
 		</div>
-	</div>
+	</section>
 
 </body>
 </html>
