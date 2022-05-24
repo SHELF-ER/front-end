@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/client.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Web site created using create-react-app" />
+	<title>mypage</title>
+</head>
+
+<body>
+	<!-- header 시작 -->
+	<header>
+		<div id="subtitle">
+			<h2>전자책</h2>
+		</div>
+		<div id="topnav">
+			<ul>
+				<li><img src="./img/homeicon.png" alt="home icon"/></li>
+				<li>&#10217;</li>
+				<li><a href="./client.html">나의 도서관</a></li>
+				<li>&#10217;</li>
+				<li><a href="./client.html">내 정보</a></li>
+			</ul>
+		</div>
+		<div id="loginnav">
+			<ul>
+				<li>○○○님,</li>
+				<li><a href="./main.html">로그아웃</a></li>
+			</ul>
+			<a href="./client.html"><img src="./img/loginicon.png" alt="login icon"/></a>
+		</div>
+	</header><!-- header 끝 -->
+
+	<!-- section main 시작 -->
+	<section id="main">
+		<!-- left 시작 -->
+		<div id="left">
+			<div id="menu_01" class="menu">
+				<div class="menu_title"><a href="./borrow.html">자료검색</a></div>
+			</div>
+			<div id="menu_02" class="menu">
+				<div class="menu_title"><a href="#">인기신간</a></div>
+				<ul>
+					<li><a href="#">&#8226; 가정과 생활</a></li>
+					<li><a href="#">&#8226; 경제/비즈니스</a></li>
+					<li><a href="#">&#8226; 인문/사회</a></li>
+					<li><a href="#">&#8226; 역사</a></li>
+					<li><a href="#">&#8226; 자연/과학</a></li>
+					<li><a href="#">&#8226; 취미/건강/여행</a></li>
+					<li><a href="#">&#8226; 문화예술</a></li>
+				</ul>
+			</div>
+			<div id="menu_03" class="menu">
+				<div class="menu_title"><a href="./client.html">나의 도서관</a></div>
+				<ul>
+					<li><a href="./client.html">&#8226; 내 정보</a></li>
+					<li><a href="./myborrow.html">&#8226; 대출 현황</a></li>
+				</ul>
+			</div>
+		</div><!-- left 끝 -->
+		<!-- content 시작 -->
+		<div id="content">
+			<h1>내 정보</h1><hr>
+			<table id="profile">
+				<tr>
+					<th>프로필 사진</th>
+					<td>
+						<div class="img"><img src="./img/profileicon.png" alt="profile icon"/></div>
+						<button>사진 변경</button><br>
+						<button class="btncolor">삭  제</button>
+					</td>
+				</tr>
+				<tr>
+					<th>별명</th>
+					<td><input type="text" placeholder="내용을 입력해주세요"></td>
+				</tr>
+			</table>
+		</div><!-- content 끝 -->
+		<!-- button 시작 -->
+		<div id="button">
+			<button>적  용</button>
+			<button class="btncolor">취  소</button>
+		</div><!-- button 끝 -->
+	</section><!-- section main 끝 -->
+
+</body>
+</html>
