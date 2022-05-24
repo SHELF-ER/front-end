@@ -1,98 +1,62 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    border: 0;
-}
-
-html {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#subtitle {
-    float: left;
-    display: block;
-    border: 1px solid rgb(164, 196, 255);
-    background-color: rgb(164, 196, 255);
-    padding: 50px 70px;
-    margin: 10px;
-}
-
-#wrap {
-    width: 960px;
-    height: 200px;
-}
-
-#sectionpage_nav {
-    display: block;
-    border: 1px solid black;
-    float: left;
-    position: relative;
-    top: 30px;
-}
-
-#util {
-    margin: 0 auto;
-    float: right;
-    top: 30px;
-}
-
-#left {
-    width: 200px;
-    float: left;
-    display: block;
-    border: 1px solid black;
-    padding: 20px 10px;
-    line-height: 31px;
-
-}
-
-.menu_02 ul {
-    background-color: azure;
-}
-
-.menu_03 ul {
-    background-color: azure;
-}
+/* myborrow.html의 css */
+/* content 시작 */
 
 #content {
-    width: 700px;
-    float: right;
-    display: block;
-    border: 1px solid black;
-    padding: 10px 10px;
-}
-
-#buttonday{
-    display: block;
-    border: 1px solid black;
-    padding: 10px 10px;
-    float: right;
-
-}
-#mop02{
     float: left;
+    display: block;
+    width: 700px;
+    margin-left: 38px;
+}
+
+#content h1 { font-size: 25px;}
+#content hr {
+    width: 100px;
+    margin: 3px 0;
+}
+
+#loannum {
     margin-top: 20px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #7f7f7f;
 }
+#loannum b { color: #f19d00; }
 
-#mop02>a{
-    color: tomato;
+#lateday {
+    display: block;
+    float: right;
+    width: 356px;
+    height: 40px;
+    border: 1px solid #5e5e5e38;
+    background-color: white;
+    font-size: 16px;
+    color: #404040;
+    text-align: center;
+    line-height: 40px;
 }
+#lateday b { color: #f19d00; }
 
-#buttonday>a{
-    color: tomato;
+#bookinfo {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    padding: 22px 27px;
+    background-color: #efefef;
 }
+#bookinfo img {
+    width: 114px;
+    border: 5px solid #4266b180;
+}
+/*
+html {
+    color: #5e5e5e29;
+    color: #5e5e5e38;
+    color: #efefef99;
+    color: #5e5e5e;
+}
+*/
+/*
 
 #bookprofile02 {
     width: 700px;
@@ -120,3 +84,6 @@ html {
     float: right;
     padding: 3px 3px;
 }
+*/
+
+/* content 끝 */
