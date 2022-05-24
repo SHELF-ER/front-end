@@ -56,47 +56,31 @@
 #bookinfo h3 {
     font-size: 17px;
     font-weight: bolder;
+    margin-bottom: 5px;
 }
 
-#bookinfo h5 {
-    color: #5e5e5e;
-}
-/*
-html {
-    color: #5e5e5e29;
-    color: #5e5e5e38;
-    color: #efefef99;
-    color: #5e5e5e;
-}
-*/
-/*
-
-#bookprofile02 {
-    width: 700px;
-    float: right;
+#bookinfo ul {
     display: block;
-    margin-top: 10px;
-    text-align: left;
-    border: 1px solid black;
-    padding: 15px 10px;
-    background-color: lightgray;
-    line-height: 30px;
-}
-  
-#bookimg{
     float: left;
-    margin-right: 10px;
-    margin-top: 40px;
 }
 
-#bookinfo{
-    width: 500px;
-    padding: 0;
-    display: block; 
-    border: 1px solid grey;
-    float: right;
-    padding: 3px 3px;
+#bookinfo li {
+    display: inline;
+    padding: 0 7px;
+    font-size: 13px;
+    color: #5e5e5e;
+    border-left: 1px solid #5e5e5e;
 }
-*/
+
+#bookinfo .bdleft {
+    padding-left: 0;
+    border-left: none;
+}
+
+#bookinfo b { color: #f19d00; }
+#bookplot {
+    margin: 5px 0;
+    font-size: 14px;
+}
 
 /* content 끝 */

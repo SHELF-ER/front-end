@@ -2,134 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href=".css">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <title>BORROW</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/borrow.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <title>mypage</title>
 </head>
 
 <body>
+	<!-- header 시작 -->
+	<header>
+		<div id="subtitle">
+			<h2>전자책</h2>
+		</div>
+		<div id="topnav">
+			<ul>
+				<li><img src="./img/homeicon.png" alt="home icon"/></li>
+				<li>&#10217;</li>
+				<li><a href="./client.html">나의 도서관</a></li>
+				<li>&#10217;</li>
+				<li><a href="./client.html">대출 현황</a></li>
+			</ul>
+		</div>
+		<div id="loginnav">
+			<ul>
+				<li>○○○님,</li>
+				<li><a href="./main.html">로그아웃</a></li>
+			</ul>
+			<a href="./client.html"><img src="./img/loginicon.png" alt="login icon"/></a>
+		</div>
+	</header><!-- header 끝 -->
 
-    <div id="wrap">
-        <!--top-->
-        <div id="title">
-            <div id="subtitle">
-                <!--title-->
-                <h2>전자책</h2>
-            </div>
-            <div id="sectionpage_nav">
-                <ul>
-                    <li class="first">
-                        <a href=""><img src="https://via.placeholder.com/45.png/09f/fff"></a>
-                        <!--임시 사진-->
-                    </li>
-                    <li>
-                        <a href="">나의 도서관</a>
-                    </li>
-                    <li>
-                        <a href="">내 정보</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="util">
-                <ul>
-                    <li>ooo님,</li>
-                    <li><a href="main.html">로그아웃</a></li>
-                    <li>
-                        <a href=""><img src="https://via.placeholder.com/45.png/09f/fff"></a>
-                        <!--임시 사진-->
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="section">
-        <!--본문 내용-->
-        <div id="left">
-            <!--nav 목록-->
-            <div class="menu">
-                <div class="menu_01">
-                    <a href="#"><strong>자료검색</strong></a>
-                </div>
-                <div class="menu_02">
-                    <a href="#"><strong>인기신간</strong></a>
-                    <ul>
-                        <li>
-                            <a href="#">가정과 생활</a>
-                        </li>
-                        <li>
-                            <a href="#">경제/비즈니스</a>
-                        </li>
-                        <li>
-                            <a href="#">인문/사회</a>
-                        </li>
-                        <li>
-                            <a href="#">역사</a>
-                        </li>
-                        <li>
-                            <a href="#">자연/과학</a>
-                        </li>
-                        <li>
-                            <a href="#">취미/건강/여행</a>
-                        </li>
-                        <li>
-                            <a href="#">문화예술</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu_03">
-                    <a href="client.html"><strong>나의 도서관</strong></a>
-                    <ul>
-                        <li>
-                            <a href="client.html">내 정보</a>
-                        </li>
-                        <li>
-                            <a href="myborrow.html">대출 현황</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="search01">
-            <!--right 내용-->
-            <h2><strong>자료검색</strong></h2>
-        </div>
-        <div id="search02">
-            <ul>
-                <li id="genre">
-                    <select>
-                        <option value="0">장르 전체</option>
-                        <option value="1">가정과 생활</option>
-                        <option value="2">경제/비즈니스</option>
-                        <option value="3">인문/사회</option>
-                        <option value="4">역사</option>
-                        <option value="5">자연/과학</option>
-                        <option value="6">취미/건강/여행</option>
-                        <option value="7">문화예술</option>
-                    </select>
-                </li>
-                <li id="title">
-                    <select>
-                        <option value="0">제목 검색</option>
-                        <option value="1">제목만</option>
-                        <option value="2">저자만</option>
-                        <option value="3">제목+저자</option>
-                    </select>
-                </li>
-                <li id="searchbar">
-                    <input type="text" placeholder="검색">
-                    <input type="button" />
-                </li>
-            </ul>
-        </div>
+  <!-- section main 시작 -->
+  <section id="main">
+    <!-- left 시작 -->
+    <div id="left">
+      <div id="menu_01" class="menu">
+        <div class="menu_title"><a href="./borrow.html">자료검색</a></div>
+      </div>
+      <div id="menu_02" class="menu">
+        <div class="menu_title"><a href="#">인기신간</a></div>
+        <ul>
+          <li><a href="#">&#8226; 가정과 생활</a></li>
+          <li><a href="#">&#8226; 경제/비즈니스</a></li>
+          <li><a href="#">&#8226; 인문/사회</a></li>
+          <li><a href="#">&#8226; 역사</a></li>
+          <li><a href="#">&#8226; 자연/과학</a></li>
+          <li><a href="#">&#8226; 취미/건강/여행</a></li>
+          <li><a href="#">&#8226; 문화예술</a></li>
+        </ul>
+      </div>
+      <div id="menu_03" class="menu">
+        <div class="menu_title"><a href="./client.html">나의 도서관</a></div>
+        <ul>
+          <li><a href="./client.html">&#8226; 내 정보</a></li>
+          <li><a href="./myborrow.html">&#8226; 대출 현황</a></li>
+        </ul>
+      </div>
+    </div><!-- left 끝 -->
+    
+    <!-- content 시작 -->
+    <div id="content">
+      <h1>자료검색</h1><hr>
 
-        <div id="search03">
-            <p>검색된 책이 없습니다.<br>키워드를 입력해주세요!</p>
-        </div>
-    </div>
+      <div id="search02">
+        <ul>
+          <li id="genre">
+            <select>
+              <option value="0">장르 전체</option>
+              <option value="1">가정과 생활</option>
+              <option value="2">경제/비즈니스</option>
+              <option value="3">인문/사회</option>
+              <option value="4">역사</option>
+              <option value="5">자연/과학</option>
+              <option value="6">취미/건강/여행</option>
+              <option value="7">문화예술</option>
+            </select>
+          </li>
+          <li id="title">
+            <select>
+              <option value="0">제목 검색</option>
+              <option value="1">제목만</option>
+              <option value="2">저자만</option>
+              <option value="3">제목+저자</option>
+            </select>
+          </li>
+          <li id="searchbar">
+            <input type="text" placeholder="검색">
+            <input type="button" />
+          </li>
+        </ul>
+      </div>
+
+      <div id="search03">
+        <p>검색된 책이 없습니다.<br>키워드를 입력해주세요!</p>
+      </div>
+    </div><!-- content 끝 -->
+  </section><!-- section main 끝 -->
 
 </body>
-
 </html>

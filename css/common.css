@@ -139,7 +139,11 @@ header {
     background-color: white;
     border-top: 1px solid #5e5e5e29;
 }
-.menu_title a:hover { color: #6485cd; }
+
+.menu_title:hover {
+    cursor: pointer;
+    background-color: #4266b11c;
+}
 
 .menu ul { padding: 10px 0; }
 .menu li {
