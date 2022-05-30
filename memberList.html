@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><link rel="stylesheet" href="css/memberList.css"></head>
+<body>
+<div class="container">
+  <header class="common">
+    <div class="subtitle">
+      <h2>HOME</h2>
+    </div>
+    <div class="topnav">
+      <ul>
+        <li>&#10217;</li>
+        <li><a src="#">회원 목록</a></li>
+      </ul>
+    </div>
+  </header>
+  <div>
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>책제목</th>
+        <th>빌린 사람</th>
+        <th>책이 있는 층</th>
+        <th>유저 아이디</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="member : ${members}">
+        <td th:text="${member.id}">가</td>
+        <td th:text="${member.name}">나</td>
+        <td th:text="${member.bookFloor}">다</td>
+        <td th:text="${member.borrower}">라</td>
+        <td th:text="${member.uid}">마</td>
+      </tr>
+      <tr th:each="member : ${members}">
+        <td th:text="${member.id}">가</td>
+        <td th:text="${member.name}">나</td>
+        <td th:text="${member.bookFloor}">다</td>
+        <td th:text="${member.borrower}">라</td>
+        <td th:text="${member.uid}">마</td>
+      </tr>
+      <tr th:each="member : ${members}">
+        <td th:text="${member.id}">가</td>
+        <td th:text="${member.name}">나</td>
+        <td th:text="${member.bookFloor}">다</td>
+        <td th:text="${member.borrower}">라</td>
+        <td th:text="${member.uid}">마</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div> <!-- /container -->
+</body>
+</html>
